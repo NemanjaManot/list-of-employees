@@ -1,14 +1,18 @@
-jQuery(document).ready(function($) {
+$(document).ready(function($) {
 	
-var $description = $('.description');
+var description = $('.description');
 var employees = [];
 
 function addInformation(employed) {
-$description.append('<div class="zaposleni"> <img src="'+employed.picture+'"> <h2> '+ employed.name +' </h2> <p> <span> Prof. headline: </span> '+ employed.description +' <br> <span> Contact: </span> '+employed.emailAddress+' </p> </div> ');
+description.append(
+	'<div class="zaposleni"> <img src="'+employed.picture+'"> <h2> '
+	+ employed.name +' </h2> <p> <span> Prof. headline: </span> '
+	+ employed.description +' <br> <span> Contact: </span> '
+	+employed.emailAddress+' </p> </div> ');
 }
 
 $.ajax({
-	url: 'https://raw.githubusercontent.com/NemanjaManot/just-for-practice/master/employees.json',
+	url: 'https://jsonblob.com/api/jsonBlob/57bdeaf0e4b0dc55a4f01cd4',
 	dataType: 'json',
 	type: 'get',
 	success: function(result) {
@@ -21,7 +25,7 @@ $.ajax({
   
   function renderEmployees(employeees){
     /* clear previous state */
-    $description.html("");
+    description.html("");
     // --- //
     $.each(employeees, function(i, employed) {
 			addInformation(employed);

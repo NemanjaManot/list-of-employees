@@ -101,6 +101,10 @@
   color: #f6f6f6;
 }
 
+/* img {
+	height: 200px;
+	width: 200px;
+} */
 /* --- Header --- */
 header {
   background: linear-gradient(0deg, rgba(198, 61, 15, 0.6), rgba(198, 61, 15, 0.6)), url("http://m.wsandb.co.uk/IMG/954/185954/softcat-employees.jpg") fixed;
@@ -177,6 +181,8 @@ main {
   padding: 1%;
   border-radius: 15px;
   float: left;
+  height: 200px;
+  width: 200px;
 }
 .description .zaposleni h2 {
   padding: 3% 0 5% 0;
@@ -201,6 +207,7 @@ main {
   padding: 0;
   border-radius: 0;
   width: 100%;
+  height: auto;
 }
 .changeView .zaposleni p {
   font-size: 12px;
