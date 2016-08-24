@@ -1,0 +1,157 @@
+@import "variables";
+@import "responsive";
+
+/* --- All --- */
+.container {
+	width: 100%;
+	margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.allButton {
+		text-decoration: none;
+		cursor: pointer;
+		padding: 5px 15px;
+		background-color: $lightGray;
+		color: $darkGray;
+		border-radius: 5px;
+		@include transition(background 0.2s, color 0.5s ease);
+		&:hover {
+			background-color: $darkGray;
+			color: $lightGray;
+		}
+}
+
+/* --- Header --- */
+header {
+	background: linear-gradient(0deg, rgba(198, 61, 15, 0.60), rgba(198, 61, 15, 0.60))
+	,url('http://m.wsandb.co.uk/IMG/954/185954/softcat-employees.jpg') fixed;
+	//background-size: cover;
+	//padding: 5% 0;
+	text-align: center;
+	height: 90vh;
+	background-size: cover;
+	@include display-flex();
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	h1 {
+		color: $lightGray;
+		text-transform: uppercase;
+		text-shadow: 2px 2px black;
+		font-size: 290%;
+		max-width: 80%;
+	}
+}
+
+
+/* --- Main --- */
+main {
+	color: $lightGray;  
+    @include background-linear-gradient(to bottom right, $backgrouncColorTwo, $backgroundColor);
+    width: 100%;
+}
+
+
+
+/* --- Naslov i button --- */
+.naslov {
+	text-align: center;
+	padding: 3% 0;
+	h1 {
+		text-decoration: underline;
+		padding-bottom: 1%;
+	}
+	input {
+		margin-top: 2%;
+		border-radius: 5px;
+		border: none;
+		padding: 5px;
+		@include transition(background 0.2s linear);
+		&:hover {
+			background-color: $darkGray *3.5;
+		}
+	}
+}
+
+
+/* --- Article and section --- */
+.listView {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.description {
+	.zaposleni {
+		float: left;
+		width: 100%;
+		border: 1px solid $darkGray;
+		border-radius: 7px;
+		margin: 2% 0;
+		box-shadow: 0 0 5px $darkGray;
+		img {
+			padding: 1%;
+			border-radius: 15px;
+			float: left;
+		}
+
+		h2 {
+			padding: 3% 0 5% 0; 
+		}
+
+		span {
+			font-weight: bold;
+			color: $spanColor;
+		}
+	}
+}
+
+
+/* --- Change view ... --- */
+
+.viewTwo {
+	width: 80%;
+}
+
+.changeView {
+	.zaposleni {
+		width: 31%;
+		border: 0;
+		border-radius: 0;
+		margin: 2% 1%;
+		img {
+			padding: 0;
+			border-radius: 0;
+			width: 100%;
+		}
+
+		p {
+			font-size: 12px;
+			padding: 3% 0; 
+		}
+	}
+}
+
+
+/* --- Footer ---*/
+footer {
+	text-align: center;
+	background-color: $darkGray;
+	padding: 1% 0;
+	p {
+		color: $lightGray;
+	}
+}
+
+
+
+
+
+
+
+

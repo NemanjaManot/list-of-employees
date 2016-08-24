@@ -1,0 +1,231 @@
+
+/* --- All --- */
+.container {
+	width: 100%;
+	margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;
+/*    background: #C63D0F;   
+    background: -webkit-linear-gradient(left top, #C63D0F, #ef6232);
+    background: -o-linear-gradient(bottom right, #C63D0F, #ef6232); 
+    background: -moz-linear-gradient(bottom right, #C63D0F, #ef6232); 
+    background: linear-gradient(to bottom right, #C63D0F, #ef6232); */
+}
+
+.hrStyle {
+	color: #DE1B1B;
+	background-color: #DE1B1B;
+	height: 4px;
+	border: 0;
+	padding: 5px 0;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/* --- Header --- */
+header {
+	background: linear-gradient(0deg, rgba(198, 61, 15, 0.60), rgba(198, 61, 15, 0.60))
+	,url('http://m.wsandb.co.uk/IMG/954/185954/softcat-employees.jpg') fixed;
+	background-size: cover;
+	padding: 5% 0;
+	text-align: center;
+	color: #F6F6F6;
+}
+
+header h1 {
+	text-transform: uppercase;
+	text-shadow: 2px 2px black;
+	font-style: italic;
+	font-size: 290%;
+}
+
+
+/* --- Main --- */
+main {
+	color: white;
+    background: #C63D0F;   
+    background: -webkit-linear-gradient(left top, #de4411, #ef6232);
+    background: -o-linear-gradient(bottom right, #de4411, #ef6232); 
+    background: -moz-linear-gradient(bottom right, #de4411, #ef6232); 
+    background: linear-gradient(to bottom right, #de4411, #ef6232); 
+    width: 100%;
+}
+
+
+
+/* --- Naslov i button --- */
+.naslov {
+	text-align: center;
+	padding: 3% 0;
+}
+.naslov h1 {
+	text-decoration: underline;
+	padding-bottom: 1%;
+}
+.naslov .button {
+	text-decoration: none;
+	cursor: pointer;
+	padding: 5px 15px;
+	background-color: white;
+	color: #3B3738;
+	border-radius: 5px;
+	-webkit-transition: background 0.2s, color 0.5s ease;
+	-moz-transition: background 0.2s, color 0.5s ease;
+	-ms-transition: background 0.2s, color 0.5s ease;
+	-o-transition: background 0.2s, color 0.5s ease;
+	transition: background 0.2s, color 0.5s ease;
+}
+.naslov .button:hover {
+	background-color: #3B3738;
+	color: white;
+}
+
+
+
+/* --- Article and section --- */
+.listView {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.description .zaposleni {
+	float: left;
+	width: 100%;
+	border: 1px solid #3B3738;
+	border-radius: 7px;
+	margin: 2% 0;
+	box-shadow: 0 0 5px #3B3738;
+}
+.description .zaposleni img {
+	padding: 1%;
+	border-radius: 15px;
+	float: left;
+}
+.description .zaposleni h2 {
+	padding: 3% 0 5% 0; 
+}
+.description .zaposleni span{
+	font-weight: bold;
+	color: #e3dacf;
+}
+
+
+
+/* --- Change view ... --- */
+
+.viewTwo {
+	width: 80%;
+}
+
+.changeView .zaposleni {
+	width: 31%;
+	border: 0;
+	border-radius: 0;
+	margin: 2% 1%;
+}
+.changeView .zaposleni img {
+	padding: 0;
+	border-radius: 0;
+	width: 100%;
+}
+.changeView .zaposleni p {
+	font-size: 12px;
+	padding: 3% 0; 
+}
+
+
+/* --- Footer ---*/
+footer {
+	padding: 2% 0;
+	text-align: center;
+	background-color: #3B3738;
+	color: #FDF3E7;
+}
+
+
+
+
+
+
+
+
+/* ----- R E S P O N S I V E ------ */
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 870px) {
+	header h1 {
+		font-size: 240%;
+	}
+	.listView {
+		width: 80%;
+	}
+	.description .zaposleni p {
+		padding: 5%; 
+	}
+
+	/* --- Grid --- */
+	.viewTwo {
+		width: 90%;
+	}
+	.changeView .zaposleni {
+		width: 48%;
+	}
+}
+
+
+
+@media screen and (max-width: 560px) {
+	header h1 {
+		font-size: 200%;
+	}
+	.naslov {
+		padding: 6% 0;
+	}
+	.naslov h1 {
+		padding-bottom: 3%;
+		font-size: 115%;
+	}
+	.naslov .button {
+		font-size: 70%;
+	}
+
+	.listView {
+		width: 60%;
+	}
+	.description .zaposleni img {
+		float: none;
+	}
+	.description .zaposleni h2 {
+		font-size: 100%;
+	}
+	.description .zaposleni p, footer p {
+		font-size: 75%;
+	}
+
+	/* --- Grid --- */
+	.changeView .zaposleni {
+		width: 95%;
+		margin: 2% 1%;
+	}
+}
+
+
+
+@media screen and (max-width: 450px) {
+	header h1 {
+		font-size: 160%;
+	}
+	.listView {
+		width: 90%;
+	}
+	.description .zaposleni img {
+		float: none;
+	}
+	/* --- Grid --- */
+
+}

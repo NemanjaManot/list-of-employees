@@ -1,0 +1,112 @@
+/* ----- R E S P O N S I V E ------ */
+
+
+@media screen and (max-width: 870px) {
+	.container {
+		header {
+			h1 {
+				font-size: 240%;
+			}
+		}
+	}
+	main {
+		.listView {
+			width: 80%;
+			.description {
+				.zaposleni {
+					p {
+						padding: 2%; 
+					}
+				} 
+			}
+		}
+	}
+
+	/* --- Grid --- */
+	.viewTwo {
+		width: 90%;
+		.changeView {
+			.zaposleni {
+				width: 48%;
+			}
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 590px) {
+	.container {
+		.allButton {
+			font-size: 70%;
+		}
+		header {
+			h1 {
+				font-size: 200%;
+			}
+		}
+	}
+	
+	main {
+		.naslov {
+			padding: 6% 0;
+			h1 {
+				padding-bottom: 3%;
+				font-size: 115%;
+			}
+			input {
+				font-size: 70%;
+			}
+		}
+
+		.listView {
+			width: 60%;
+			.description {
+				.zaposleni {
+					img {
+						float: none;
+					}
+
+					h2 {
+						font-size: 100%;
+					}
+					p {
+						font-size: 75%;
+					}
+				}
+			}
+		}
+	}
+
+		/*  --- Grid ---  */
+	.container {
+		main {
+			.changeView {
+				.zaposleni {
+					width: 95%;
+					margin: 2% 1%;
+				}
+			}
+		}
+	}
+
+	footer {
+		p {
+			font-size: 75%;
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 450px) {
+	.container {
+		main {
+			.listView {
+				width: 90%;
+			}
+		}
+	}
+
+
+}

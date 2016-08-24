@@ -1,0 +1,42 @@
+/*  --- Color ---- */
+
+$lightGray: #F6F6F6;
+$backgroundColor: #C63D0F;
+$backgrouncColorTwo: #8f2c0b;
+$darkGray: #3B3738;
+$spanColor: #e3dacf;
+
+
+
+/*  ------- Linear Gradient -------  */
+
+@mixin background-linear-gradient($var...) {
+	background: -webkit-linear-gradient($var);
+	background: -o-linear-gradient($var); 
+	background: -moz-linear-gradient($var); 
+	background: linear-gradient($var); 
+}
+
+/*  ------- END Linear Gradient -------  */
+
+
+/* ------ Transition --------*/
+@mixin transition($var...) {
+	-webkit-transition: $var;
+	-moz-transition: $var;
+	-ms-transition: $var;
+	-o-transition: $var; 
+	transition: $var;
+}
+/*  --- END Transition ---  */
+
+/*  ------ Display Flex ------- */
+
+@mixin display-flex() {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex; 
+	display: flex; 
+}
+/*  ------ END Display Flex ------- */
