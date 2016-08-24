@@ -26,6 +26,11 @@
 		}
 }
 
+/* img {
+	height: 200px;
+	width: 200px;
+} */
+
 /* --- Header --- */
 header {
 	background: linear-gradient(0deg, rgba(198, 61, 15, 0.60), rgba(198, 61, 15, 0.60))
@@ -98,6 +103,8 @@ main {
 			padding: 1%;
 			border-radius: 15px;
 			float: left;
+			height: 200px;
+			width: 200px;
 		}
 
 		h2 {
@@ -128,6 +135,7 @@ main {
 			padding: 0;
 			border-radius: 0;
 			width: 100%;
+			height: auto;
 		}
 
 		p {
